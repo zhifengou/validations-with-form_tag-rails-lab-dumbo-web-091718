@@ -4,7 +4,6 @@
 <%= form_tag authors_path, method: "post" do %>
 
   <% if @author.errors.any?%>
-   <div id="error_explanation">
   <h3>There are some errors:</h3>
     <ul>
       <% @author.erros.full_messages.each do |msg|%>
